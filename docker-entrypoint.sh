@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eo pipefail
 
-DISABLE_AUTHENTICATION="true"
+DISABLE_AUTHENTICATION="false"
 
 function rwfail {
   echo "We seem to not have proper rw access to $1. Please make sure that every mounted volume has full rw access for user arangodb ($(id arangodb))"
